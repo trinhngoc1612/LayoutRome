@@ -151,6 +151,9 @@ video{
 	font-family: RobotoRegular;
 	font-weight: 500;
 }
+.collapse-change-2{
+	display: none;
+}
 a.read-more[aria-expanded="false"] .collapse-change-2{
 	display: none;
 }
@@ -359,6 +362,10 @@ span.num-star{
 /*END REVIEW*/
 
 /*additional-info*/
+.what-new ul{
+	height: 200px;
+	overflow-y: hidden;
+}
 .wrapper-content{
     display: block;
     font-size: 14px;
@@ -503,6 +510,10 @@ ul.sub-menu li:hover{
 }
 .box-img{
 	padding: 15px;
+	transition: all 0.3s;
+}
+.box-img:hover{
+	background-color: #e8e8e8;
 }
 .blear-text{
 	width: 60px;
@@ -511,6 +522,7 @@ ul.sub-menu li:hover{
 	top: 7px;
 	right: 5px;
 	background: linear-gradient(to right,rgba(255,255,255,0),rgba(255,255,255,1));
+	pointer-events: none;
 }
 .box-content{
 	padding: 7px 10px;
@@ -591,5 +603,12 @@ footer a{
 	footer{
 		padding-left: 15px;
 		text-align: center;
+	}
+}
+/*end footer*/
+@media (max-width: 575px){
+	/*.slider, .wrapper-content, */.review{
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 }

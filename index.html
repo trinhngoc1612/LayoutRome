@@ -4,6 +4,7 @@
 	<title>ROME: Total War - Apps on Google Play</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="st">
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -12,7 +13,6 @@
 	<link href="fontawesome/css/fontawesome.css" rel="stylesheet">
   	<link href="fontawesome/css/brands.css" rel="stylesheet">
   	<link href="fontawesome/css/solid.css" rel="stylesheet">
-
 	
 	<link rel="stylesheet" type="text/css" href="style1_header_sidebar.css">
 	<link rel="stylesheet" type="text/css" href="style2_maincontent.css">
@@ -37,10 +37,84 @@
 
 		</div>
 
+		
+		<div class="wrapper-modal">
+			<button type="button" class="btn btn-primary btn-modal" data-toggle="modal" data-target="#menu-modal">
+		  	<span class="icon">
+			  	<span></span>
+			  	<span></span>
+			  	<span></span>
+			  </span>
+			</button>
+		</div>
+
 		<div class="wrapper your-account col-auto">
+
 				<div class="menu-grid">
 					<span><i class="fas fa-th"></i></span>
 				</div>
+
+				<div class="sub-menu-grid">
+					<ul class="">
+						<li class="item">
+							<a href="#">
+								<div class="wrapper-img-grid">
+									<img src="images/photo.jpg">
+								</div>
+								<p class="text">Account</p>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="wrapper-img-grid">
+									<i class="fab fa-google"></i>
+								</div>
+								<p class="text">Search</p>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="wrapper-img-grid">
+									<i class="fab fa-google"></i>
+								</div>
+								<p class="text">Search</p>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="wrapper-img-grid">
+									<i class="fab fa-google"></i>
+								</div>
+								<p class="text">Search</p>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="wrapper-img-grid">
+									<i class="fab fa-google"></i>
+								</div>
+								<p class="text">Search</p>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="wrapper-img-grid">
+									<i class="fab fa-google"></i>
+								</div>
+								<p class="text">Search</p>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="wrapper-img-grid">
+									<i class="fab fa-google"></i>
+								</div>
+								<p class="text">Search</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+
 				<div class="your-avt">
 					<img src="images/photo.jpg" alt="your-avt">
 				</div>
@@ -55,7 +129,7 @@
 			<div class="apps">
 				<a href="#">
 					<div class="wrapper-apps">
-						<div><img src="images/icon-window.png"></div>
+						<div class="wrapper-apps-img"><img src="images/icon-window.png"></div>
 						<div class="title-apps">Apps</div>
 					</div>
 				</a>
@@ -65,7 +139,7 @@
 				<div class="more-choose choose-1 apps">
 					<a href="#">
 						<div class="wrapper-apps">
-							<div><img src="images/icon-window.png"></div>
+							<div class="wrapper-apps-img"><img src="images/icon-window.png"></div>
 							<div class="title-apps">Movie</div>
 						</div>
 					</a>
@@ -74,7 +148,7 @@
 				<div class="more-choose choose-2 apps">
 					<a href="#">
 						<div class="wrapper-apps">
-							<div><img src="images/icon-window.png"></div>
+							<div class="wrapper-apps-img"><img src="images/icon-window.png"></div>
 							<div class="title-apps">Book</div>
 						</div>
 					</a>
@@ -83,13 +157,15 @@
 				<div class="more-choose choose-3 apps">
 					<a href="#">
 						<div class="wrapper-apps">
-							<div><img src="images/icon-window.png"></div>
+							<div class="wrapper-apps-img"><img src="images/icon-window.png"></div>
 							<div class="title-apps">Entertainment</div>
 						</div>
 					</a>
 				</div>
 
 			</div> <!-- end wrapper-more -->
+
+			<div class="div-wrapper"></div>
 
 			<div class="col-menubar">
 				<div class="button-menu" id="button-menu">
@@ -243,22 +319,107 @@
 							</nav> <!--end nav-menu-->
 						</div> <!-- END MAIN MENU -->
 
-						<div class="wrapper-modal">
-							<button type="button" class="btn btn-primary btn-modal" data-toggle="modal" data-target="#menu-modal">
-						  	<span class="icon">
-							  	<span></span>
-							  	<span></span>
-							  	<span></span>
-							  </span>
-							</button>
-						</div>
-
 						<div class="question-setting">
 							<div class="wrapper-border">
 								<button class="btn btn-light btn-question"><img src="images/question.png"></button>
 								<button class="btn btn-light btn-setting"><img src="images/setting.png"></button>
 							</div>
 						</div>
+			      
+						<div class="wrapper-help">
+							<div class="help-header">
+								<div class="help-title">
+									<h5>Help</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close" id="close-help">
+				          	<span aria-hidden="true">&times;</span>
+				        	</button>
+								</div>
+
+								<div class="help-search">
+									<form class="search-form">
+										<input type="text" placeholder="Search" name="">
+										<button><i class="fas fa-search"></i></button>
+									</form>
+								</div>
+
+							</div> <!-- end help-header -->
+
+							<div class="help-content">
+								<div class="help-card">
+									<h4>Popular</h4>
+									<ul>
+										<li class="list-help">
+											<a href="#" class="help-link">
+												<div class="help-icon">
+													<img src="images/button.png">
+												</div>
+												<div class="help-text">Install and manage apps</div>
+											</a>
+										</li>
+										<li class="list-help">
+											<a href="#" class="help-link">
+												<div class="help-icon">
+													<img src="images/button.png">
+												</div>
+												<div class="help-text">Install and manage apps</div>
+											</a>
+										</li>
+										<li class="list-help">
+											<a href="#" class="help-link">
+												<div class="help-icon">
+													<img src="images/button.png">
+												</div>
+												<div class="help-text">Connect a device to your Google Account</div>
+											</a>
+										</li>
+										<li class="list-help">
+											<a href="#" class="help-link">
+												<div class="help-icon">
+													<img src="images/button.png">
+												</div>
+												<div class="help-text">Upload an app</div>
+											</a>
+										</li>
+										<li class="list-help">
+											<a href="#" class="help-link">
+												<div class="help-text help-text-more">
+													<span>browse all articles</span>
+												</div>
+											</a>
+										</li>
+										<li class="list-help">
+											<a href="#" class="help-link">
+												<div class="help-text help-text-more">
+													<span>visit help forum</span>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div> <!-- end help-card -->
+
+								<div class="help-card">
+									<h4>Contact us</h4>
+									<ul>
+										<li class="list-help">
+											<a href="#" class="help-link">
+												<div class="help-icon">
+													<img src="images/phone.png">
+												</div>
+												<div class="help-text">Phone</div>
+											</a>
+										</li>
+										<li class="list-help">
+											<a href="#" class="help-link">
+												<div class="help-icon">
+													<img src="images/feedback.png">
+												</div>
+												<div class="help-text">Send feedback</div>
+											</a>
+										</li>
+									</ul>
+								</div> <!-- end help-card -->
+							</div> <!-- end help-content -->
+						</div> <!-- end wrapper-help -->
 					</div>
 			</div> <!-- end top-menu -->
 
@@ -687,21 +848,25 @@
 								<li class="content-text">Google Pixel 3a XL</li>			
 								<li class="content-text">Google Pixel 4</li>
 								<li class="content-text">Google Pixel 4 XL</li>
-								<div class="collapse" id="collapse-li">
+								<!-- <div class="collapse" id="collapse-li"> -->
 									<li class="content-text">Huawei Honor 10</li>
 									<li class="content-text">Google Pixel 3a</li>		
 									<li class="content-text">Google Pixel 3a XL</li>			
 									<li class="content-text">Google Pixel 4</li>
 									<li class="content-text">Google Pixel 4 XL</li>
 									<li class="content-text">Huawei Honor 10</li>
-								</div>
+								<!-- </div> -->
 							</ul>
 
 							<div class="wrapper-read-more">
-								<a href="#collapse-li" class="read-more" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapse-li">
+								<a class="read-more" >
 									<span class="collapse-change-1">READ MORE</span>
 									<span class="collapse-change-2">COLLAPSE</span>
 								</a>
+								<!-- <a href="#collapse-li" class="read-more" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapse-li">
+									<span class="collapse-change-1">READ MORE</span>
+									<span class="collapse-change-2">COLLAPSE</span>
+								</a> -->
 							</div>
 
 						</div>
@@ -1077,11 +1242,11 @@
 	        	</button>
 	      </div>
 	      <div class="input-group">
-				<input type="text" class="form-control" placeholder="Search in..." aria-label="" aria-describedby="button-addon2">
-				<div class="input-group-append">
-				   <button class=" btn-outline-secondary" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+					<input type="text" class="form-control" placeholder="Search in..." aria-label="" aria-describedby="button-addon2">
+					<div class="input-group-append">
+					   <button class=" btn-outline-secondary" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+					</div>
 				</div>
-			</div>
 
 	      <div class="modal-body">
 	      	<ul class="nav nav-tabs" role="tablist">
