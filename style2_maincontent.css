@@ -150,6 +150,7 @@ video{
 	display: inline-block;
 	font-family: RobotoRegular;
 	font-weight: 500;
+	cursor: pointer;
 }
 .collapse-change-2{
 	display: none;
@@ -291,6 +292,43 @@ span.num-star{
 
 
 /*user-review*/
+.media-like-more{
+	position: relative;
+}
+.wrapper-user-more{
+	background-color: #fff;
+	position: absolute;
+	right: 0;
+	width: 180px;
+	z-index: 10;
+	box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);
+	padding: 20px;
+	display: none;
+}
+.wrapper-user-more ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.wrapper-user-more li{
+	
+	line-height: 40px;
+}
+.wrapper-user-more a{
+	color: #333;
+	font-family: RobotoRegular;
+	display: unset !important;
+}
+.user-like, .user-more{
+	cursor: pointer;
+}
+.user-more-active{
+	background-color: #e8e8e8;
+	z-index: 20;
+}
+.user-like.active svg{
+	fill: rgb(237, 59, 59);
+}
 .user-review{
 
 }
@@ -336,6 +374,7 @@ span.num-star{
 	height: 48px;
 	width: 48px;
 	position: relative;
+	border-radius: 50%;
 }
 .media-like-more svg{
 	position: absolute;
